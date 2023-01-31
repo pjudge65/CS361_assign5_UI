@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="top-left">
+                <div id="return-import">
+                    <div id="back-div" class="popup-cont">
+                        <button id="back-button"><</button>
+                        <div class="popup" id="back-popup">Return to Weekly View</div>
+                    </div>
+                    <div id="import-div" class="popup-cont">
+                        <button id="import-button">Import</button>
+                        <div class="popup" id="import-popup">Import Appointment from Microservice</div>
+                    </div>
+                    <div id="import-form">
+                        <p>Import Calendar Appointments (from Microservice) to automatically generate to-do items?  </p>
+                        <p>Warning: Importing might affect current to-dos.</p>
+                        <button id="import-yes">Yes</button>
+                        <button id="import-no">No</button>
+                    </div>
+                    <!-- <div class="popup" id="back-popup"></div> -->
+
+                </div>
+                <div id="project-header">
+                    <!-- <p id="project-title">Change Project</p> -->
+                    <div id="add-project-div" class="popup-cont">
+                        <button id="add-project-button">+</button>
+                        <div class="popup" id="add-project-popup">Create New Project</div>
+                    </div>
+                    <form id="add-project-form">
+                        <h4>Create New Project</h4>
+                        <label for="title">Project Name</label>
+                        <input type="text" id="project-name" name="name">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <!-- <div class="popup" id="back-popup"></div> -->
+                </div>
+            </div>
+            <div id="project-display">
+                <a class="project-item">Inbox</a>
+                <h4>Choose a Project to Display</h4>
+            </div>
+
+        </div>
+        <div id="right">
+            <div id="header">
+                <h1 id="daily-view-title">To-do's: Daily View</h1>
+                <div id="undo-redo" class="popup-cont">
+                    <button id="undo-button">undo</button>
+                    <button id="redo-button">redo</button>
+                    <div class="popup" id="undo-popup">Undo Action</div>
+                    <div class="popup" id="redo-popup">Redo Action</div>
+                </div>
+            </div>
+            <div id="to-do-container">
+                <!-- <div class="todo-item">
+                    <input type="checkbox"/>
+                    <h3>Create a To-Do by pressing "+" at the bottom right</h3>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox"/>
+                    <h3>Delete a To-Do by clicking on the box to the left</h3>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox"/>
+                    <h3>Create a New Project by clicking the "+" next to "Change Project"</h3>
+                </div>
+                <div class="todo-item">
+                    <input type="checkbox"/>
+                    <h3>Change Projects by clicking on the Project Name (to the left)"</h3>
+                </div>
+                <div class="todo-item"></div>
+                <div class="todo-items"></div> -->
+
+            </div>
+            <div id="add-todo-div" class="popup-cont">
+                <button id="add-todo-button">+</button>
+                <div class="popup" id="add-todo-popup">Add To-Do</div>
+            </div>
+            <form id="add-todo-form">
+                <h4>New To-Do</h5>
+                <a id="add-todo-cancel">X</a>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+ 
+                <label for="reminder">Set Reminder</label>
+                <input type="datetime-local" id="reminder" name="reminder" 
+                        value="2022-12-21" min="2022-12-21" max="2222-12-31">
+                <label for="priority">Priority</label>
+                <select name="priority" id="priority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="notes">Notes</label>
+                <input type="text" id="notes" name="notes">
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
